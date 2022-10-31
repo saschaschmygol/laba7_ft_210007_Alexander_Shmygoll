@@ -9,7 +9,7 @@ while True:
     except ValueError:
         print('Вводите число он 1 до 8 !!!!')
 
-k1 = Kletka(k, l)
+k1 = Kletka(k, l)                                                       # задание 1
 k2 = Kletka(m, n)
 
 if (k1.x + k1.y) % 2 == (k2.x + k2.y) % 2:
@@ -20,7 +20,7 @@ else:
 
 
 fig = str(input(f' Какая фигура стоит на поле ({k1.x}:{k1.y})/'
-                f'Ферзь/Ладья/Слон/Конь'))                              # задание2
+                f'Ферзь/Ладья/Слон/Конь'))                              # задание 2
 
 c2 = k2.cord
 fig1 = ''
@@ -33,7 +33,7 @@ if fig == 'Слон':
 if fig == 'Конь':
     fig1 = Kon(k, l)
 
-coordinat = fig1.hod()
+coordinat = fig1.hod()                                              #создание скиска клеток, на которые может попасть за 1 ход
 
 if c2 in coordinat:
     print(f'{fig1.name} угрожает полю {c2}')
@@ -42,7 +42,7 @@ else:
 
 
 fig = str(input(f' Какая фигура стоит на поле ({k1.x}:{k1.y})/'
-                f'Ферзь/Ладья/Слон/Конь'))                              # задание2
+                f'Ферзь/Ладья/Слон/Конь'))                              # задание 3
 
 c2 = k2.cord
 fig1 = ''
