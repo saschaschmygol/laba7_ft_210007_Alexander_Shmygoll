@@ -18,28 +18,28 @@ else:
     print(f'Клетки ({k1.x}:{k1.y}) и ({k2.x}:{k2.y}) разных цветов')
 
 
-#
-# fig = str(input(f' Какая фигура стоит на поле ({k1.x}:{k1.y})/'
-#                 f'Ферзь/Ладья/Слон/Конь'))                              # задание2
-#
-# c2 = k2.cord
-# fig1 = ''
-# if fig == 'Ферзь':
-#     fig1 = Ferz(k, l)
-# if fig == 'Ладья':
-#     fig1 = Ladia(k, l)
-# if fig == 'Слон':
-#     fig1 = Slon(k, l)
-# if fig == 'Конь':
-#     fig1 = Kon(k, l)
-#
-# coordinat = fig1.hod()
-#
-# if c2 in coordinat:
-#     print(f'{fig1.name} угрожает полю {c2}')
-# else:
-#     print(f'{fig1.name} не угрожает полю {c2}')
-#
+
+fig = str(input(f' Какая фигура стоит на поле ({k1.x}:{k1.y})/'
+                f'Ферзь/Ладья/Слон/Конь'))                              # задание2
+
+c2 = k2.cord
+fig1 = ''
+if fig == 'Ферзь':
+    fig1 = Ferz(k, l)
+if fig == 'Ладья':
+    fig1 = Ladia(k, l)
+if fig == 'Слон':
+    fig1 = Slon(k, l)
+if fig == 'Конь':
+    fig1 = Kon(k, l)
+
+coordinat = fig1.hod()
+
+if c2 in coordinat:
+    print(f'{fig1.name} угрожает полю {c2}')
+else:
+    print(f'{fig1.name} не угрожает полю {c2}')
+
 
 fig = str(input(f' Какая фигура стоит на поле ({k1.x}:{k1.y})/'
                 f'Ферзь/Ладья/Слон/Конь'))                              # задание2
